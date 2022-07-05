@@ -1,4 +1,4 @@
-package tasks01.tasks0133;
+package tasks01.task0133;
 
 import org.junit.Test;
 
