@@ -8,7 +8,7 @@ public class Solution {
         writeToConsole(s.next());
     }
     public static void writeToConsole(String s){
-        System.out.print("printing: ");
+        System.out.print("Printing: ");
         System.out.print(s);
     }
 }

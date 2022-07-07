@@ -11,7 +11,9 @@ public class Solution {
         convertEurToUsd(b, 0.85);
     }
 
-    public static void convertEurToUsd(int value, double mod){
-        System.out.println( value * mod );
+    public static double convertEurToUsd(int value, double mod){
+        double newMon = value * mod;
+        System.out.println( newMon );
+        return(newMon);
     }
 }

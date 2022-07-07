@@ -1,6 +1,11 @@
 package tasks03.task0302;
 
-import static org.junit.jupiter.api.Assertions.*;
-class SolutionTest {
-  
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+public class SolutionTest {
+    @Test
+    public void test1(){assertEquals("Кот",Solution.printString("Кот"));}
+
 }

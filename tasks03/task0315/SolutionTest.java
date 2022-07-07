@@ -1,12 +1,10 @@
-package tasks03.task0308;
+package tasks03.task0315;
 
-import org.junit.Test;
 import org.junit.Before;
+import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
-import tasks03.task0308.Solution;
 
 import static org.junit.Assert.assertEquals;
 
@@ -16,11 +14,20 @@ public class SolutionTest {
     @Before
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
+
     }
 
     @Test
     public void test1() {
-        Solution.from1To10();
-        assertEquals("3628800", outContent.toString());
+        Solution.main(null);
+        assertEquals("Red\n" +
+                        "Orange\n" +
+                        "Yellow\n" +
+                        "Green\n" +
+                        "Blue\n" +
+                        "Indigo\n" +
+                        "Violet\n",
+                outContent.toString());
+
     }
 }

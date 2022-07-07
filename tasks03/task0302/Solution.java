@@ -7,7 +7,8 @@ public class Solution {
         Scanner s = new Scanner(System.in);
         printString(s.next());
     }
-    public static void printString (String s){
+    public static String printString (String s){
         System.out.print(s);
+        return(s);
     }
 }

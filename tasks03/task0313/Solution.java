@@ -1,4 +1,4 @@
-package tasks03.task0313wip;
+package tasks03.task0313;
 
 public class Solution {
     public static void main(String[] args){

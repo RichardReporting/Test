@@ -1,4 +1,4 @@
-package tasks03.task0313wip;
+package tasks03.task0313;
 
 import org.junit.Before;
 import org.junit.Test;

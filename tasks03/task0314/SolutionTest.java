@@ -1,8 +1,7 @@
-package tasks03.task0314wip;
+package tasks03.task0314;
 
 import org.junit.Before;
 import org.junit.Test;
-import tasks03.task0314wip.Solution;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
