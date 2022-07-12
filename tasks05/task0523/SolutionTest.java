@@ -1,9 +1,10 @@
-package tasks05.task0502wip;
+package tasks05.task0523;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
@@ -19,14 +20,8 @@ public class SolutionTest {
 
     @Test
     public void test1() {
-        Solution.Cat cat1 = new Solution.Cat();
-        Solution.newCat(cat1);
-        Solution.Cat cat2 = new Solution.Cat();
-        Solution.newCat(cat2);
-
-        Solution.newCat("Васька", 5, 5, "Чонкер");
-        Solution.newCat("");
-        assertEquals("Васька сильнее, чем Барсик",
+        Solution.main(null);
+        assertEquals("Red",
                 outContent.toString());
 
     }

@@ -1,4 +1,4 @@
-package tasks05.task0502wip;
+package tasks05.task0505;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -7,12 +7,20 @@ public class Solution {
     static ArrayList<Cat> cats = new ArrayList<Cat>();
 
     public static void main(String[] args) {
-
+        Scanner s = new Scanner(System.in);
         Cat cat1 = new Cat();
-        newCat(cat1);
+        newCat(cat1, s);
         Cat cat2 = new Cat();
-        newCat(cat2);
-        fightCat(cat1, cat2);
+        newCat(cat2, s);
+        Cat cat3 = new Cat();
+        newCat(cat3, s);
+        if (fightCat(cat1, cat2)) System.out.println(cat1.name + " победил " + cat2.name);
+        else System.out.println(cat2.name + " победил " + cat1.name);
+        if (fightCat(cat1, cat3)) System.out.println(cat1.name + " победил " + cat3.name);
+        else System.out.println(cat3.name + " победил " + cat1.name);
+        if (fightCat(cat2, cat3)) System.out.print(cat2.name + " победил " + cat3.name);
+        else System.out.print(cat3.name + " победил " + cat2.name);
+
     }
 
     public static int powerCounter(Cat cat) {
@@ -30,23 +38,15 @@ public class Solution {
         return (fightPwr1);
     }
 
-    public static void fightCat(Cat cat1, Cat cat2) {
+    public static boolean fightCat(Cat cat1, Cat cat2) {
         int pwr1 = powerCounter(cat1);
         int pwr2 = powerCounter(cat2);
-        if (pwr1 > pwr2) {
-            System.out.println(cat1.name + " сильнее, чем " + cat2.name);
-            return;
-        }
-        if (pwr1 < pwr2){
-            System.out.println(cat2.name + " сильнее, чем "+ cat1.name);
-            return;
-        }
-        System.out.println("Оба бойца одинаково сильны");
-        return;
+        if (pwr1 > pwr2) return (true);
+        return (false);
     }
 
-    public static void newCat(Cat cat) {
-        Scanner s = new Scanner(System.in);
+    public static void newCat(Cat cat, Scanner s) {
+
         cat.name = s.nextLine();
         cat.age = s.nextInt();
         s.nextLine();
