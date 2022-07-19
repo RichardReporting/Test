@@ -12,7 +12,8 @@ public class Solution {
         System.out.println(closeToTen(a,b));
     }
     public static int closeToTen(int a, int b){
-        if (abs(abs(a)-10)<abs(abs(b)-10)){
+
+        if (abs(a-10)<abs(b-10)){
             return (a);
         }
         return (b);
