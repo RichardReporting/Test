@@ -1,4 +1,4 @@
-package tasks09.task0913wip;
+package tasks09.task0913;
 
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
@@ -9,17 +9,11 @@ public class Solution {
         try {
             method1();
         } catch (NullPointerException e) {
-            e.printStackTrace();
-/*
-        } catch (ArithmeticException e) {
-            e.printStackTrace();
-*/
+            System.out.print("catch");
+
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
-/*
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-*/
+            System.out.print("catch");
+
         }
     }
 
