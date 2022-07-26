@@ -1,11 +1,9 @@
-package The_Required_Tasks.SquareEveryDigit;
+package The_Required_Tasks.Lvl7.ShortestWord;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
@@ -21,13 +19,8 @@ public class SolutionTest {
 
     @Test
     public void test1() {
-        Solution inputSol = new Solution();
-        String input = "12345";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
-        Solution.main(null);
-        assertEquals("1491625", outContent.toString());
-
+        assertEquals((Integer) 15, Solution.findShort("Dermatoglyphics"));
+        assertEquals((Integer) 1, Solution.findShort("i want to travel the world writing code one day"));
+        assertEquals((Integer) 3, Solution.findShort("turns out random test cases are easier than writing out basic ones"));
     }
-
 }

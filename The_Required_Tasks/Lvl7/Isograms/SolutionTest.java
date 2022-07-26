@@ -1,11 +1,9 @@
-package The_Required_Tasks.DisemvowelTrolls;
+package The_Required_Tasks.Lvl7.Isograms;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
@@ -21,13 +19,10 @@ public class SolutionTest {
 
     @Test
     public void test1() {
-        Solution inputSol = new Solution();
-        String input = "baAaOoDdIdIuUb";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
-        Solution.main(null);
-        assertEquals("bDddb", outContent.toString());
-
+        assertEquals(true, Solution.isogramChecker("Dermatoglyphics"));
+        assertEquals(false, Solution.isogramChecker("aba"));
+        assertEquals(false, Solution.isogramChecker("moOse"));
+        assertEquals(true, Solution.isogramChecker("thumbscrewjapingly"));
+        assertEquals(true, Solution.isogramChecker(""));
     }
-
 }

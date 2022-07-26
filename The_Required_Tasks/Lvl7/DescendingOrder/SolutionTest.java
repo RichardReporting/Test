@@ -1,4 +1,4 @@
-package The_Required_Tasks.VowelCount;
+package The_Required_Tasks.Lvl7.DescendingOrder;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -22,12 +22,13 @@ public class SolutionTest {
     @Test
     public void test1() {
         Solution inputSol = new Solution();
-        String input = "baAaOob";
+        String input = "156842";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
         Solution.main(null);
-        assertEquals("5", outContent.toString());
+        assertEquals("865421", outContent.toString());
 
     }
+
 
 }

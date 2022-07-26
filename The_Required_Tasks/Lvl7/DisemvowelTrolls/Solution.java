@@ -1,4 +1,4 @@
-package The_Required_Tasks.DisemvowelTrolls;
+package The_Required_Tasks.Lvl7.DisemvowelTrolls;
 
 import java.util.Scanner;
 

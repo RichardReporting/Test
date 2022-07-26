@@ -1,4 +1,4 @@
-package The_Required_Tasks.GetTheMiddleCharacter;
+package The_Required_Tasks.Lvl7.GetTheMiddleCharacter;
 
 import java.util.Scanner;
 

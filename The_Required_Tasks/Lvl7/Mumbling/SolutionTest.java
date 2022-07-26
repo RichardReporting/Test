@@ -1,4 +1,4 @@
-package The_Required_Tasks.DescendingOrder;
+package The_Required_Tasks.Lvl7.Mumbling;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -22,13 +22,12 @@ public class SolutionTest {
     @Test
     public void test1() {
         Solution inputSol = new Solution();
-        String input = "156842";
+        String input = "abcd";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
         Solution.main(null);
-        assertEquals("865421", outContent.toString());
+        assertEquals("A-Bb-Ccc-Dddd", outContent.toString());
 
     }
-
 
 }

@@ -1,4 +1,4 @@
-package The_Required_Tasks.GetTheMiddleCharacter;
+package The_Required_Tasks.Lvl7.GetTheMiddleCharacter;
 
 import org.junit.Before;
 import org.junit.Test;

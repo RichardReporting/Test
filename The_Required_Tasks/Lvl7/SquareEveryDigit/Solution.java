@@ -1,4 +1,4 @@
-package The_Required_Tasks.SquareEveryDigit;
+package The_Required_Tasks.Lvl7.SquareEveryDigit;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package The_Required_Tasks.VowelCount;
+package The_Required_Tasks.Lvl7.VowelCount;
 
 import java.util.Scanner;
 
